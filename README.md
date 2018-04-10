@@ -73,7 +73,7 @@ It's always useful to hear what worked and what didn't, which sections are too l
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details
 
 ## Built With
 
