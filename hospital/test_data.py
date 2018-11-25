@@ -1,4 +1,5 @@
 import datetime
+import pytz
 
 from hospital.models import Doctor, Patient, Diagnosis, Surgery
 
@@ -81,8 +82,8 @@ def create_test_data():
             ],
             'surgeries': [
                 {
-                    'start_datetime': datetime.datetime(2005, 3, 27, 12, 30),
-                    'end_datetime': datetime.datetime(2005, 3, 27, 16, 30),
+                    'start_datetime': datetime.datetime(2005, 3, 27, 12, 30, tzinfo=pytz.utc),
+                    'end_datetime': datetime.datetime(2005, 3, 27, 16, 30, tzinfo=pytz.utc),
                     'procedure': 'Aneurysm clip',
                     'doctors': [
                         'grey',
@@ -100,8 +101,8 @@ def create_test_data():
             ],
             'surgeries': [
                 {
-                    'start_datetime': datetime.datetime(2005, 3, 27, 10, 00),
-                    'end_datetime': datetime.datetime(2005, 3, 27, 15, 15),
+                    'start_datetime': datetime.datetime(2005, 3, 27, 10, 00, tzinfo=pytz.utc),
+                    'end_datetime': datetime.datetime(2005, 3, 27, 15, 15, tzinfo=pytz.utc),
                     'procedure': 'Coronary artery bypass surgery',
                     'doctors': [
                         'o\'malley',
@@ -119,8 +120,8 @@ def create_test_data():
             ],
             'surgeries': [
                 {
-                    'start_datetime': datetime.datetime(2005, 4, 3, 16, 00),
-                    'end_datetime': datetime.datetime(2005, 4, 3, 17, 45),
+                    'start_datetime': datetime.datetime(2005, 4, 3, 16, 00, tzinfo=pytz.utc),
+                    'end_datetime': datetime.datetime(2005, 4, 3, 17, 45, tzinfo=pytz.utc),
                     'procedure': 'Transventricular repair with a right ventriculotomy',
                     'doctors': [
                         'grey',
@@ -140,8 +141,8 @@ def create_test_data():
             ],
             'surgeries': [
                 {
-                    'start_datetime': datetime.datetime(2005, 4, 3, 9, 15),
-                    'end_datetime': datetime.datetime(2005, 4, 3, 12, 15),
+                    'start_datetime': datetime.datetime(2005, 4, 3, 9, 15, tzinfo=pytz.utc),
+                    'end_datetime': datetime.datetime(2005, 4, 3, 12, 15, tzinfo=pytz.utc),
                     'procedure': 'Craniotomy',
                     'doctors': [
                         'grey',
@@ -161,8 +162,8 @@ def create_test_data():
             ],
             'surgeries': [
                 {
-                    'start_datetime': datetime.datetime(2005, 4, 3, 20, 20),
-                    'end_datetime': datetime.datetime(2005, 4, 3, 21, 50),
+                    'start_datetime': datetime.datetime(2005, 4, 3, 20, 20, tzinfo=pytz.utc),
+                    'end_datetime': datetime.datetime(2005, 4, 3, 21, 50, tzinfo=pytz.utc),
                     'procedure': 'Surgery',
                     'doctors': [
                         'grey',
@@ -182,8 +183,8 @@ def create_test_data():
             ],
             'surgeries': [
                 {
-                    'start_datetime': datetime.datetime(2005, 4, 10, 11, 45),
-                    'end_datetime': datetime.datetime(2005, 4, 10, 13, 45),
+                    'start_datetime': datetime.datetime(2005, 4, 10, 11, 45, tzinfo=pytz.utc),
+                    'end_datetime': datetime.datetime(2005, 4, 10, 13, 45, tzinfo=pytz.utc),
                     'procedure': 'Surgery',
                     'doctors': [
                         'grey',
@@ -204,8 +205,8 @@ def create_test_data():
             ],
             'surgeries': [
                 {
-                    'start_datetime': datetime.datetime(2005, 4, 10, 10, 00),
-                    'end_datetime': datetime.datetime(2005, 4, 10, 17, 00),
+                    'start_datetime': datetime.datetime(2005, 4, 10, 10, 00, tzinfo=pytz.utc),
+                    'end_datetime': datetime.datetime(2005, 4, 10, 17, 00, tzinfo=pytz.utc),
                     'procedure': 'Aortic repair',
                     'doctors': [
                         'stevens',
@@ -215,8 +216,8 @@ def create_test_data():
                     ]
                 },
                 {
-                    'start_datetime': datetime.datetime(2005, 4, 10, 20, 15),
-                    'end_datetime': datetime.datetime(2005, 4, 10, 22, 15),
+                    'start_datetime': datetime.datetime(2005, 4, 10, 20, 15, tzinfo=pytz.utc),
+                    'end_datetime': datetime.datetime(2005, 4, 10, 22, 15, tzinfo=pytz.utc),
                     'procedure': 'Organ harvest',
                     'doctors': [
                         'stevens',
@@ -236,8 +237,8 @@ def create_test_data():
             ],
             'surgeries': [
                 {
-                    'start_datetime': datetime.datetime(2005, 4, 10, 22, 30),
-                    'end_datetime': datetime.datetime(2005, 4, 11, 5, 15),
+                    'start_datetime': datetime.datetime(2005, 4, 10, 22, 30, tzinfo=pytz.utc),
+                    'end_datetime': datetime.datetime(2005, 4, 11, 5, 15, tzinfo=pytz.utc),
                     'procedure': 'Liver transplant',
                     'doctors': [
                         'o\'malley',
@@ -255,8 +256,8 @@ def create_test_data():
             ],
             'surgeries': [
                 {
-                    'start_datetime': datetime.datetime(2005, 4, 17, 13, 45),
-                    'end_datetime': datetime.datetime(2005, 4, 17, 16, 00),
+                    'start_datetime': datetime.datetime(2005, 4, 17, 13, 45, tzinfo=pytz.utc),
+                    'end_datetime': datetime.datetime(2005, 4, 17, 16, 00, tzinfo=pytz.utc),
                     'procedure': 'Prostatectomy',
                     'doctors': [
                         'stevens',
@@ -276,8 +277,8 @@ def create_test_data():
             ],
             'surgeries': [
                 {
-                    'start_datetime': datetime.datetime(2005, 4, 17, 10, 00),
-                    'end_datetime': datetime.datetime(2005, 4, 17, 12, 25),
+                    'start_datetime': datetime.datetime(2005, 4, 17, 10, 00, tzinfo=pytz.utc),
+                    'end_datetime': datetime.datetime(2005, 4, 17, 12, 25, tzinfo=pytz.utc),
                     'procedure': 'Controlled extraction',
                     'doctors': [
                         'grey',
@@ -287,8 +288,8 @@ def create_test_data():
                     ]
                 },
                 {
-                    'start_datetime': datetime.datetime(2005, 4, 17, 17, 30),
-                    'end_datetime': datetime.datetime(2005, 4, 17, 20, 40),
+                    'start_datetime': datetime.datetime(2005, 4, 17, 17, 30, tzinfo=pytz.utc),
+                    'end_datetime': datetime.datetime(2005, 4, 17, 20, 40, tzinfo=pytz.utc),
                     'procedure': 'Tumor resection',
                     'doctors': [
                         'grey',
@@ -310,8 +311,8 @@ def create_test_data():
             ],
             'surgeries': [
                 {
-                    'start_datetime': datetime.datetime(2005, 4, 24, 7, 15),
-                    'end_datetime': datetime.datetime(2005, 4, 24, 12, 5),
+                    'start_datetime': datetime.datetime(2005, 4, 24, 7, 15, tzinfo=pytz.utc),
+                    'end_datetime': datetime.datetime(2005, 4, 24, 12, 5, tzinfo=pytz.utc),
                     'procedure': 'Coronary artery bypass graft',
                     'doctors': [
                         'grey',
@@ -319,8 +320,8 @@ def create_test_data():
                     ]
                 },
                 {
-                    'start_datetime': datetime.datetime(2005, 4, 24, 15, 10),
-                    'end_datetime': datetime.datetime(2005, 4, 24, 17, 50),
+                    'start_datetime': datetime.datetime(2005, 4, 24, 15, 10, tzinfo=pytz.utc),
+                    'end_datetime': datetime.datetime(2005, 4, 24, 17, 50, tzinfo=pytz.utc),
                     'procedure': 'Surgery',
                     'doctors': [
                         'grey',
@@ -339,8 +340,8 @@ def create_test_data():
             ],
             'surgeries': [
                 {
-                    'start_datetime': datetime.datetime(2005, 4, 24, 9, 30),
-                    'end_datetime': datetime.datetime(2005, 4, 24, 11, 55),
+                    'start_datetime': datetime.datetime(2005, 4, 24, 9, 30, tzinfo=pytz.utc),
+                    'end_datetime': datetime.datetime(2005, 4, 24, 11, 55, tzinfo=pytz.utc),
                     'procedure': 'Foreign body removal',
                     'doctors': [
                         'o\'malley',
@@ -362,8 +363,8 @@ def create_test_data():
             ],
             'surgeries': [
                 {
-                    'start_datetime': datetime.datetime(2005, 4, 24, 14, 50),
-                    'end_datetime': datetime.datetime(2005, 4, 24, 18, 15),
+                    'start_datetime': datetime.datetime(2005, 4, 24, 14, 50, tzinfo=pytz.utc),
+                    'end_datetime': datetime.datetime(2005, 4, 24, 18, 15, tzinfo=pytz.utc),
                     'procedure': 'Brain surgery',
                     'doctors': [
                         'karev',
@@ -391,7 +392,6 @@ def create_test_data():
             first_name=patient['first_name'],
             last_name=patient['last_name'],
             survived=patient['survived'])
-        print('patient: ', p)
 
         for diagnosis in patient['diagnoses']:
             Diagnosis.objects.create(description=diagnosis, patient=p)
@@ -402,9 +402,7 @@ def create_test_data():
                 end_datetime=surgery['end_datetime'],
                 procedure=surgery['procedure'],
                 patient=p)
-            print('surgery: ', s)
 
             for doctor in surgery['doctors']:
                 d = Doctor.objects.get(last_name__iexact=doctor)
-                print('doctor: ', d)
                 s.doctors.add(d)
