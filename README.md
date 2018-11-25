@@ -43,7 +43,7 @@ def all_doctors():
     return False
 ```
 
-Whenever you want to check your answers, run the tests and watch the number of fails steadily fall to 0 :)
+Whenever you want to check your answers, run the tests and watch the number of fails steadily fall to 0 :smile:
 ```
 python manage.py test
 ```
@@ -53,6 +53,23 @@ If you'd rather run a single test, you can do that too. Replace the last part of
 python manage.py test hospital.tests.HospitalTests.test_all_doctors
 ```
 The format is always "test_" followed by the name of the function in user_queries.py
+
+### Using the shell
+To explore the database in the shell, you need to import the data. (The tests do this for you, so you only need to follow these steps if you want to use the shell.)
+
+```
+python manage.py migrate  # create database structure
+python manage.py shell
+```
+
+Once in the shell, run the function to populate the database and check it's worked.
+```
+from hospital.test_data import create_test_data
+from hospital.models import Doctor, Patient, Diagnosis, Surgery
+create_test_data()
+Doctor.objects.count()  # expected output = 9
+```
+
 
 ## How you can help
 
