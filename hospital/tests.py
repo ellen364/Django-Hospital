@@ -25,10 +25,10 @@ class HospitalTests(TestCase):
             list(user_queries.all_attendings()))
 
     def test_meredith_grey(self):
-        qs = Doctor.objects.get(first_name='Meredith')
-        self.assertListEqual(
-            list(qs),
-            list(user_queries.meredith_grey()))
+        instance = Doctor.objects.get(first_name='Meredith')
+        self.assertEqual(
+            instance,
+            user_queries.meredith_grey())
 
     def test_deceased_patients(self):
         qs = Patient.objects.filter(survived=False)
@@ -78,13 +78,13 @@ class HospitalTests(TestCase):
         qs = Surgery.objects.filter(doctors__last_name="Bailey")
         self.assertListEqual(
             list(qs),
-            list(user_queries.baileys_surgeries))
+            list(user_queries.baileys_surgeries()))
 
     def test_cardiothoracic_surgeries(self):
         qs = Surgery.objects.filter(doctors__speciality="CAR")
         self.assertListEqual(
             list(qs),
-            list(user_queries.cardiothoracic_surgeries))
+            list(user_queries.cardiothoracic_surgeries()))
 
     def test_shepherds_patients(self):
         qs = Patient.objects.filter(
