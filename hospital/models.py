@@ -2,24 +2,24 @@ from django.db import models
 
 
 class Doctor(models.Model):
-    INTERN = 'INT'
-    RESIDENT = 'RES'
-    ATTENDING = 'ATT'
+    INTERN = "INT"
+    RESIDENT = "RES"
+    ATTENDING = "ATT"
     POSITION_CHOICES = (
-        (INTERN, 'Intern'),
-        (RESIDENT, 'Resident'),
-        (ATTENDING, 'Attending'),
+        (INTERN, "Intern"),
+        (RESIDENT, "Resident"),
+        (ATTENDING, "Attending"),
     )
 
-    GENERAL = 'GEN'
-    CARDIO = 'CAR'
-    NEURO = 'NEU'
-    PEDIATRIC = 'PED'
+    GENERAL = "GEN"
+    CARDIO = "CAR"
+    NEURO = "NEU"
+    PEDIATRIC = "PED"
     SPECIALITY_CHOICES = (
-        (GENERAL, 'General'),
-        (CARDIO, 'Cardiothoracic'),
-        (NEURO, 'Neurosurgery'),
-        (PEDIATRIC, 'Pediatric'),
+        (GENERAL, "General"),
+        (CARDIO, "Cardiothoracic"),
+        (NEURO, "Neurosurgery"),
+        (PEDIATRIC, "Pediatric"),
     )
 
     first_name = models.CharField(max_length=50)
@@ -29,7 +29,7 @@ class Doctor(models.Model):
     speciality = models.CharField(max_length=3, choices=SPECIALITY_CHOICES)
 
     def __str__(self):
-        return 'Dr {} {}'.format(self.first_name, self.last_name)
+        return "Dr {} {}".format(self.first_name, self.last_name)
 
 
 class Patient(models.Model):
@@ -38,7 +38,7 @@ class Patient(models.Model):
     survived = models.BooleanField(default=True)
 
     def __str__(self):
-        return '{} {}'.format(self.first_name, self.last_name)
+        return "{} {}".format(self.first_name, self.last_name)
 
 
 class Diagnosis(models.Model):
@@ -54,4 +54,4 @@ class Surgery(models.Model):
     doctors = models.ManyToManyField(Doctor)
 
     def __str__(self):
-        return 'Surgery at {}'.format(self.start_datetime)
+        return "Surgery at {}".format(self.start_datetime)

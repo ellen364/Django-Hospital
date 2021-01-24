@@ -1,4 +1,4 @@
-from hospital.models import Doctor, Patient, Diagnosis, Surgery
+from hospital.models import Diagnosis, Doctor, Patient, Surgery
 
 
 # Getting used to the models
