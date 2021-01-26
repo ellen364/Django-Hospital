@@ -1,0 +1,1119 @@
+[
+    {
+        "model": "hospital.doctor",
+        "pk": 1,
+        "fields": {
+            "first_name": "Meredith",
+            "last_name": "Grey",
+            "birth_year": 1978,
+            "position": "INT",
+            "speciality": "GEN"
+        }
+    },
+    {
+        "model": "hospital.doctor",
+        "pk": 2,
+        "fields": {
+            "first_name": "Christina",
+            "last_name": "Yang",
+            "birth_year": 1978,
+            "position": "INT",
+            "speciality": "CAR"
+        }
+    },
+    {
+        "model": "hospital.doctor",
+        "pk": 3,
+        "fields": {
+            "first_name": "Izzie",
+            "last_name": "Stevens",
+            "birth_year": 1980,
+            "position": "INT",
+            "speciality": "GEN"
+        }
+    },
+    {
+        "model": "hospital.doctor",
+        "pk": 4,
+        "fields": {
+            "first_name": "Alex",
+            "last_name": "Karev",
+            "birth_year": 1978,
+            "position": "INT",
+            "speciality": "PED"
+        }
+    },
+    {
+        "model": "hospital.doctor",
+        "pk": 5,
+        "fields": {
+            "first_name": "George",
+            "last_name": "O'Malley",
+            "birth_year": 1980,
+            "position": "INT",
+            "speciality": "GEN"
+        }
+    },
+    {
+        "model": "hospital.doctor",
+        "pk": 6,
+        "fields": {
+            "first_name": "Miranda",
+            "last_name": "Bailey",
+            "birth_year": 1973,
+            "position": "RES",
+            "speciality": "GEN"
+        }
+    },
+    {
+        "model": "hospital.doctor",
+        "pk": 7,
+        "fields": {
+            "first_name": "Richard",
+            "last_name": "Webber",
+            "birth_year": 1954,
+            "position": "ATT",
+            "speciality": "GEN"
+        }
+    },
+    {
+        "model": "hospital.doctor",
+        "pk": 8,
+        "fields": {
+            "first_name": "Preston",
+            "last_name": "Burke",
+            "birth_year": 1966,
+            "position": "ATT",
+            "speciality": "CAR"
+        }
+    },
+    {
+        "model": "hospital.doctor",
+        "pk": 9,
+        "fields": {
+            "first_name": "Derek",
+            "last_name": "Shepherd",
+            "birth_year": 1966,
+            "position": "ATT",
+            "speciality": "NEU"
+        }
+    },
+    {
+        "model": "hospital.patient",
+        "pk": 1,
+        "fields": {
+            "first_name": "Katie",
+            "last_name": "Bryce",
+            "survived": true
+        }
+    },
+    {
+        "model": "hospital.patient",
+        "pk": 2,
+        "fields": {
+            "first_name": "Tony",
+            "last_name": "Savitch",
+            "survived": false
+        }
+    },
+    {
+        "model": "hospital.patient",
+        "pk": 3,
+        "fields": {
+            "first_name": "Bryan",
+            "last_name": "Johnson",
+            "survived": true
+        }
+    },
+    {
+        "model": "hospital.patient",
+        "pk": 4,
+        "fields": {
+            "first_name": "Allison",
+            "last_name": "",
+            "survived": true
+        }
+    },
+    {
+        "model": "hospital.patient",
+        "pk": 5,
+        "fields": {
+            "first_name": "Vic",
+            "last_name": "",
+            "survived": true
+        }
+    },
+    {
+        "model": "hospital.patient",
+        "pk": 6,
+        "fields": {
+            "first_name": "Viper",
+            "last_name": "",
+            "survived": true
+        }
+    },
+    {
+        "model": "hospital.patient",
+        "pk": 7,
+        "fields": {
+            "first_name": "Kevin",
+            "last_name": "Davidson",
+            "survived": false
+        }
+    },
+    {
+        "model": "hospital.patient",
+        "pk": 8,
+        "fields": {
+            "first_name": "Lloyd",
+            "last_name": "Mackie",
+            "survived": true
+        }
+    },
+    {
+        "model": "hospital.patient",
+        "pk": 9,
+        "fields": {
+            "first_name": "Rick",
+            "last_name": "Humphrey",
+            "survived": true
+        }
+    },
+    {
+        "model": "hospital.patient",
+        "pk": 10,
+        "fields": {
+            "first_name": "Jorge",
+            "last_name": "Cruz",
+            "survived": true
+        }
+    },
+    {
+        "model": "hospital.patient",
+        "pk": 11,
+        "fields": {
+            "first_name": "",
+            "last_name": "Patterson",
+            "survived": true
+        }
+    },
+    {
+        "model": "hospital.patient",
+        "pk": 12,
+        "fields": {
+            "first_name": "Stephanie",
+            "last_name": "Drake",
+            "survived": true
+        }
+    },
+    {
+        "model": "hospital.patient",
+        "pk": 13,
+        "fields": {
+            "first_name": "Jerry",
+            "last_name": "Frost",
+            "survived": true
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 1,
+        "fields": {
+            "description": "Aneurysm",
+            "patient": 1
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 2,
+        "fields": {
+            "description": "Subarachnoid hemorrhage",
+            "patient": 1
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 3,
+        "fields": {
+            "description": "Coronary heart disease",
+            "patient": 2
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 4,
+        "fields": {
+            "description": "Tetralogy of fallot with pulmonary atresia",
+            "patient": 3
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 5,
+        "fields": {
+            "description": "Blunt head trauma",
+            "patient": 4
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 6,
+        "fields": {
+            "description": "Defensive wounds",
+            "patient": 4
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 7,
+        "fields": {
+            "description": "Abdominal rupture",
+            "patient": 4
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 8,
+        "fields": {
+            "description": "Amputated penis",
+            "patient": 5
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 9,
+        "fields": {
+            "description": "Severe loss of blood",
+            "patient": 5
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 10,
+        "fields": {
+            "description": "Abdominal lacerations",
+            "patient": 6
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 11,
+        "fields": {
+            "description": "Internal bleeding",
+            "patient": 6
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 12,
+        "fields": {
+            "description": "Widened mediastinum",
+            "patient": 7
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 13,
+        "fields": {
+            "description": "Cerebral edema",
+            "patient": 7
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 14,
+        "fields": {
+            "description": "Traumatic aortic injury",
+            "patient": 7
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 15,
+        "fields": {
+            "description": "Brain death",
+            "patient": 7
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 16,
+        "fields": {
+            "description": "Liver cancer",
+            "patient": 8
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 17,
+        "fields": {
+            "description": "Prostate cancer",
+            "patient": 9
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 18,
+        "fields": {
+            "description": "Sharp force trauma",
+            "patient": 10
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 19,
+        "fields": {
+            "description": "Brain tumour",
+            "patient": 10
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 20,
+        "fields": {
+            "description": "Angina",
+            "patient": 11
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 21,
+        "fields": {
+            "description": "Tear in the ventricular wall",
+            "patient": 11
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 22,
+        "fields": {
+            "description": "Anorexia",
+            "patient": 11
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 23,
+        "fields": {
+            "description": "Hyperinflated lungs",
+            "patient": 12
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 24,
+        "fields": {
+            "description": "Foreign object in lung",
+            "patient": 12
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 25,
+        "fields": {
+            "description": "Chronic back pain",
+            "patient": 13
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 26,
+        "fields": {
+            "description": "Drug addiction",
+            "patient": 13
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 27,
+        "fields": {
+            "description": "Spinal fusion",
+            "patient": 13
+        }
+    },
+    {
+        "model": "hospital.diagnosis",
+        "pk": 28,
+        "fields": {
+            "description": "Subdural bleed with midline shift",
+            "patient": 13
+        }
+    },
+    {
+        "model": "hospital.surgery",
+        "pk": 1,
+        "fields": {
+            "start_datetime": "2005-03-27T12:30:00Z",
+            "end_datetime": "2005-03-27T16:30:00Z",
+            "procedure": "Aneurysm clip",
+            "patient": 1,
+            "doctors": [
+                1,
+                9
+            ]
+        }
+    },
+    {
+        "model": "hospital.surgery",
+        "pk": 2,
+        "fields": {
+            "start_datetime": "2005-03-27T10:00:00Z",
+            "end_datetime": "2005-03-27T15:15:00Z",
+            "procedure": "Coronary artery bypass surgery",
+            "patient": 2,
+            "doctors": [
+                5,
+                8
+            ]
+        }
+    },
+    {
+        "model": "hospital.surgery",
+        "pk": 3,
+        "fields": {
+            "start_datetime": "2005-04-03T16:00:00Z",
+            "end_datetime": "2005-04-03T17:45:00Z",
+            "procedure": "Transventricular repair with a right ventriculotomy",
+            "patient": 3,
+            "doctors": [
+                1,
+                8
+            ]
+        }
+    },
+    {
+        "model": "hospital.surgery",
+        "pk": 4,
+        "fields": {
+            "start_datetime": "2005-04-03T09:15:00Z",
+            "end_datetime": "2005-04-03T12:15:00Z",
+            "procedure": "Craniotomy",
+            "patient": 4,
+            "doctors": [
+                1,
+                8,
+                9
+            ]
+        }
+    },
+    {
+        "model": "hospital.surgery",
+        "pk": 5,
+        "fields": {
+            "start_datetime": "2005-04-03T20:20:00Z",
+            "end_datetime": "2005-04-03T21:50:00Z",
+            "procedure": "Surgery",
+            "patient": 5,
+            "doctors": [
+                1,
+                2,
+                6
+            ]
+        }
+    },
+    {
+        "model": "hospital.surgery",
+        "pk": 6,
+        "fields": {
+            "start_datetime": "2005-04-10T11:45:00Z",
+            "end_datetime": "2005-04-10T13:45:00Z",
+            "procedure": "Surgery",
+            "patient": 6,
+            "doctors": [
+                1,
+                6
+            ]
+        }
+    },
+    {
+        "model": "hospital.surgery",
+        "pk": 7,
+        "fields": {
+            "start_datetime": "2005-04-10T10:00:00Z",
+            "end_datetime": "2005-04-10T17:00:00Z",
+            "procedure": "Aortic repair",
+            "patient": 7,
+            "doctors": [
+                2,
+                3,
+                8,
+                9
+            ]
+        }
+    },
+    {
+        "model": "hospital.surgery",
+        "pk": 8,
+        "fields": {
+            "start_datetime": "2005-04-10T20:15:00Z",
+            "end_datetime": "2005-04-10T22:15:00Z",
+            "procedure": "Organ harvest",
+            "patient": 7,
+            "doctors": [
+                2,
+                3,
+                8,
+                9
+            ]
+        }
+    },
+    {
+        "model": "hospital.surgery",
+        "pk": 9,
+        "fields": {
+            "start_datetime": "2005-04-10T22:30:00Z",
+            "end_datetime": "2005-04-11T05:15:00Z",
+            "procedure": "Liver transplant",
+            "patient": 8,
+            "doctors": [
+                5,
+                7
+            ]
+        }
+    },
+    {
+        "model": "hospital.surgery",
+        "pk": 10,
+        "fields": {
+            "start_datetime": "2005-04-17T13:45:00Z",
+            "end_datetime": "2005-04-17T16:00:00Z",
+            "procedure": "Prostatectomy",
+            "patient": 9,
+            "doctors": [
+                3,
+                5,
+                6
+            ]
+        }
+    },
+    {
+        "model": "hospital.surgery",
+        "pk": 11,
+        "fields": {
+            "start_datetime": "2005-04-17T10:00:00Z",
+            "end_datetime": "2005-04-17T12:25:00Z",
+            "procedure": "Controlled extraction",
+            "patient": 10,
+            "doctors": [
+                1,
+                4,
+                5,
+                9
+            ]
+        }
+    },
+    {
+        "model": "hospital.surgery",
+        "pk": 12,
+        "fields": {
+            "start_datetime": "2005-04-17T17:30:00Z",
+            "end_datetime": "2005-04-17T20:40:00Z",
+            "procedure": "Tumor resection",
+            "patient": 10,
+            "doctors": [
+                1,
+                4,
+                5,
+                9
+            ]
+        }
+    },
+    {
+        "model": "hospital.surgery",
+        "pk": 13,
+        "fields": {
+            "start_datetime": "2005-04-24T07:15:00Z",
+            "end_datetime": "2005-04-24T12:05:00Z",
+            "procedure": "Coronary artery bypass graft",
+            "patient": 11,
+            "doctors": [
+                1,
+                8
+            ]
+        }
+    },
+    {
+        "model": "hospital.surgery",
+        "pk": 14,
+        "fields": {
+            "start_datetime": "2005-04-24T15:10:00Z",
+            "end_datetime": "2005-04-24T17:50:00Z",
+            "procedure": "Surgery",
+            "patient": 11,
+            "doctors": [
+                1,
+                8
+            ]
+        }
+    },
+    {
+        "model": "hospital.surgery",
+        "pk": 15,
+        "fields": {
+            "start_datetime": "2005-04-24T09:30:00Z",
+            "end_datetime": "2005-04-24T11:55:00Z",
+            "procedure": "Foreign body removal",
+            "patient": 12,
+            "doctors": [
+                5,
+                6,
+                7
+            ]
+        }
+    },
+    {
+        "model": "hospital.surgery",
+        "pk": 16,
+        "fields": {
+            "start_datetime": "2005-04-24T14:50:00Z",
+            "end_datetime": "2005-04-24T18:15:00Z",
+            "procedure": "Brain surgery",
+            "patient": 13,
+            "doctors": [
+                3,
+                4,
+                9
+            ]
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add diagnosis",
+            "content_type": 1,
+            "codename": "add_diagnosis"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change diagnosis",
+            "content_type": 1,
+            "codename": "change_diagnosis"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete diagnosis",
+            "content_type": 1,
+            "codename": "delete_diagnosis"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view diagnosis",
+            "content_type": 1,
+            "codename": "view_diagnosis"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add doctor",
+            "content_type": 2,
+            "codename": "add_doctor"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change doctor",
+            "content_type": 2,
+            "codename": "change_doctor"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete doctor",
+            "content_type": 2,
+            "codename": "delete_doctor"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view doctor",
+            "content_type": 2,
+            "codename": "view_doctor"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add patient",
+            "content_type": 3,
+            "codename": "add_patient"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change patient",
+            "content_type": 3,
+            "codename": "change_patient"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete patient",
+            "content_type": 3,
+            "codename": "delete_patient"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view patient",
+            "content_type": 3,
+            "codename": "view_patient"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add surgery",
+            "content_type": 4,
+            "codename": "add_surgery"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change surgery",
+            "content_type": 4,
+            "codename": "change_surgery"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete surgery",
+            "content_type": 4,
+            "codename": "delete_surgery"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view surgery",
+            "content_type": 4,
+            "codename": "view_surgery"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 5,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 5,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 5,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 5,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 6,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 6,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 6,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 6,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 7,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 7,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 7,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 7,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 8,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 8,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 8,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 8,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 9,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 9,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 9,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 9,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 37,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 10,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 38,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 10,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 39,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 10,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 40,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 10,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "hospital",
+            "model": "diagnosis"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "hospital",
+            "model": "doctor"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "hospital",
+            "model": "patient"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "hospital",
+            "model": "surgery"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": {
+            "app_label": "auth",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 9,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 10,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    }
+]

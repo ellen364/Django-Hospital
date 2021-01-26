@@ -9,9 +9,7 @@ from hospital.models import Diagnosis, Doctor, Patient, Surgery
 
 
 class HospitalTests(TestCase):
-    @classmethod
-    def setUpTestData(cls):
-        test_data.create_test_data()
+    fixtures = ["initial_data"]
 
     def test_all_doctors(self):
         qs = Doctor.objects.all()
