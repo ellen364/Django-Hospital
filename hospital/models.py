@@ -28,6 +28,9 @@ class Doctor(models.Model):
     position = models.CharField(max_length=3, choices=POSITION_CHOICES)
     speciality = models.CharField(max_length=3, choices=SPECIALITY_CHOICES)
 
+    class Meta:
+        ordering = ("id",)
+
     def __str__(self):
         return "Dr {} {}".format(self.first_name, self.last_name)
 
@@ -36,6 +39,9 @@ class Patient(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     survived = models.BooleanField(default=True)
+
+    class Meta:
+        ordering = ("id",)
 
     def __str__(self):
         return "{} {}".format(self.first_name, self.last_name)
@@ -47,6 +53,7 @@ class Diagnosis(models.Model):
 
     class Meta:
         verbose_name_plural = "Diagnoses"
+        ordering = ("id",)
 
 
 class Surgery(models.Model):
@@ -58,6 +65,7 @@ class Surgery(models.Model):
 
     class Meta:
         verbose_name_plural = "Surgeries"
+        ordering = ("id",)
 
     def __str__(self):
         return "Surgery at {}".format(self.start_datetime)
