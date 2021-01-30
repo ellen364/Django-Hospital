@@ -45,6 +45,9 @@ class Diagnosis(models.Model):
     description = models.CharField(max_length=200)
     patient = models.ForeignKey(Patient, on_delete=models.PROTECT)
 
+    class Meta:
+        verbose_name_plural = "Diagnoses"
+
 
 class Surgery(models.Model):
     start_datetime = models.DateTimeField()
@@ -52,6 +55,9 @@ class Surgery(models.Model):
     procedure = models.CharField(max_length=100)
     patient = models.ForeignKey(Patient, on_delete=models.PROTECT)
     doctors = models.ManyToManyField(Doctor)
+
+    class Meta:
+        verbose_name_plural = "Surgeries"
 
     def __str__(self):
         return "Surgery at {}".format(self.start_datetime)
