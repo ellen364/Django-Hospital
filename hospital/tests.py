@@ -10,7 +10,6 @@ class HospitalTests(CustomTestCase):
         """A completed example. Change the first argument of the assert,
         Patient.objects.all(), to make the test fail.
         """
-
         self.assertQuerysetEqual(
             Patient.objects.all(),
             queries.all_patients(),
@@ -23,13 +22,6 @@ class HospitalTests(CustomTestCase):
             queries.all_doctors(),
         )
 
-    def test_all_attendings(self):
-        """Retrieve the doctors who are attendings."""
-        self.assertQuerysetEqual(
-            "Replace with your query",
-            queries.all_attendings(),
-        )
-
     def test_meredith_grey(self):
         """Retrieve only the doctor Meredith Grey."""
         self.assertQuerysetEqual(
@@ -37,11 +29,25 @@ class HospitalTests(CustomTestCase):
             queries.meredith_grey(),
         )
 
+    def test_all_attendings(self):
+        """Retrieve the doctors who are attendings."""
+        self.assertQuerysetEqual(
+            "Replace with your query",
+            queries.all_attendings(),
+        )
+
     def test_deceased_patients(self):
         """Retrieve patients who died."""
         self.assertQuerysetEqual(
             "Replace with your query",
             queries.deceased_patients(),
+        )
+
+    def test_patients_unknown_last_name(self):
+        """Retrieve patients whose last name isn't known.."""
+        self.assertQuerysetEqual(
+            "Replace with your query",
+            queries.patients_unknown_last_name(),
         )
 
     def test_procedure_contains_surgery_case_insensitive(self):
@@ -87,7 +93,9 @@ class HospitalTests(CustomTestCase):
         )
 
     def test_surgeries_on_10_apr_2005_starting_before_noon(self):
-        """Retrieve surgeries occuring on 10 April 2005 and starting before noon."""
+        """Retrieve surgeries that happened on 10 April 2005 and started before
+        12 noon.
+        """
         self.assertQuerysetEqual(
             "Replace with your query",
             queries.surgeries_on_10_apr_2005_starting_before_noon(),
@@ -122,21 +130,24 @@ class HospitalTests(CustomTestCase):
         )
 
     def test_number_deceased_patients(self):
-        """How many patients died?"""
+        """Counting, aggregating and annotating.
+
+        How many patients died?
+        """
         self.assertQuerysetEqual(
             "Replace with your query",
             queries.number_deceased_patients(),
         )
 
     def test_number_of_diagnoses_jerry_frost(self):
-        """How many diagnoses were received by patient Jerry Frost?"""
+        """How many diagnoses were received by the patient Jerry Frost?"""
         self.assertQuerysetEqual(
             "Replace with your query",
             queries.number_of_diagnoses_jerry_frost(),
         )
 
     def test_earliest_birth_year_of_doctors(self):
-        """Of the doctors' birth years, what is the earliest year?"""
+        """The doctors' records contain birth years. What is the earliest birth year?"""
         self.assertQuerysetEqual(
             "Replace with your query",
             queries.earliest_birth_year_of_doctors(),
@@ -150,11 +161,10 @@ class HospitalTests(CustomTestCase):
         )
 
     def test_average_duration_all_surgeries(self):
-        """Extra credit -- these queries are quite a bit harder
+        """What is the average duration of all surgeries?
+
         Tip: if you're using SQLite, the default database, you'll need to use an
         ExpressionWrapper.
-
-        What is the average duration of all surgeries?
         """
         self.assertQuerysetEqual(
             "Replace with your query",
@@ -162,7 +172,7 @@ class HospitalTests(CustomTestCase):
         )
 
     def test_surgeries_longer_3hours(self):
-        """Retrieve surgeries that look >3 hours."""
+        """Retrieve surgeries that were longer than 3 hours."""
         self.assertQuerysetEqual(
             "Replace with your query",
             queries.surgeries_longer_3hours(),

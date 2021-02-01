@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime, timedelta, timezone
 
 from django.db.models import Avg, Count, DurationField, ExpressionWrapper, F, Max, Min
 
@@ -13,12 +13,16 @@ def all_doctors():
     return Doctor.objects.all()
 
 
+def meredith_grey():
+    return Doctor.objects.get(first_name="Meredith")
+
+
 def all_attendings():
     return Doctor.objects.filter(position="ATT")
 
 
-def meredith_grey():
-    return Doctor.objects.get(first_name="Meredith")
+def patients_unknown_last_name():
+    return Patient.objects.filter(last_name="")
 
 
 def deceased_patients():
@@ -47,8 +51,8 @@ def interns_born_after_1978():
 
 def surgeries_on_10_apr_2005_starting_before_noon():
     return Surgery.objects.filter(
-        start_datetime__gte=datetime.datetime(2005, 4, 10, 0, 0),
-        start_datetime__lt=datetime.datetime(2005, 4, 10, 12, 0),
+        start_datetime__gte=datetime(2005, 4, 10, 0, 0, tzinfo=timezone.utc),
+        start_datetime__lt=datetime(2005, 4, 10, 12, 0, tzinfo=timezone.utc),
     )
 
 
@@ -97,4 +101,4 @@ def surgeries_longer_3hours():
         duration=ExpressionWrapper(
             F("end_datetime") - F("start_datetime"), output_field=DurationField()
         )
-    ).filter(duration__gt=datetime.timedelta(hours=3))
+    ).filter(duration__gt=timedelta(hours=3))
