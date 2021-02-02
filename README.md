@@ -1,103 +1,59 @@
 ![Django Hospital](./django_hospital_logo.png)
 
-An easy, interactive way to practice Django queries. Great for beginners.
+Django Hospital is an interactive way to practice Django queries.
 
-* A Django app - learn with the tools you want to use
-* Fictional hospital (familiar to some!) with doctors, patients, diagnoses, and surgeries
-* Pull out the right data and test failures become test successes
-* Challenge yourself to complete every example query
+## Features
 
-## Getting Started
+* For Django 3.1
+* Provides data for a fictional hospital -- doctors, patients, diagnoses and surgeries
+* Uses Python's built in testing tools (unittest)
+* Start with 20 failing tests. Write your queries in `tests.py` and watch test failures turn into test successes
 
-These instructions will get Django Hospital up and running on your local machine.
+## Installing
 
-### Prerequisites
-
-* Python
-* Django
-* Git
-
-To install Django (and Python if you need it) on Windows: https://docs.djangoproject.com/en/2.0/howto/windows/
-
-For Linux or Mac: https://docs.djangoproject.com/en/2.0/topics/install/
-
-To install Git on any operating system: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-
-### Installing
-
-Get started with just 1 line of code.
-
-(Though remember to make sure you're in the directory where you want to clone the project!)
-
-```
-git clone https://github.com/ellen654321/Django-Hospital.git
-```
+To install Django Hospital:
+* Clone the repo
+* Install the requirements in `requirements/base.txt`
 
 ## Using Django Hospital
 
-Have a look in models.py to get familiar with the 4 models (Doctor, Patient, Diagnosis, Surgery)
+Have a look in `hospital/models.py` to get familiar with the 4 models (Doctor, Patient, Diagnosis, Surgery).
 
-Open user_queries.py and start working through the practice queries. Just replace "False" with your answer.
-```
-def all_doctors():
-    return False
+Open `hospital/tests.py` and start working through the practice queries.
+
+Each test has the structure below. The docstring explains what data you should retrieve with your query. The first argument to `assertQuerysetEqual`, "Replace with your query", is where your query goes. The second argument, `queries.all_doctors()` in this case, is the value against which your query will be compared.
+```python
+def test_all_doctors(self):
+    """Retrieve every doctor."""
+    self.assertQuerysetEqual(
+        "Replace with your query",
+        queries.all_doctors(),
+    )
 ```
 
-Whenever you want to check your answers, run the tests and watch the number of fails steadily fall to 0 :smile:
+Whenever you want to check your answers, run the tests.
 ```
 python manage.py test
 ```
 
-If you'd rather run a single test, you can do that too. Replace the last part of this example ("test_all_doctors") with the test method you want to run.
-```
-python manage.py test hospital.tests.HospitalTests.test_all_doctors
-```
-The format is always "test_" followed by the name of the function in user_queries.py
+## Using the shell or admin
 
-### Using the shell
-To explore the database in the shell, you need to import the data. (The tests do this for you, so you only need to follow these steps if you want to use the shell.)
+To explore the data using the shell or admin, you'll need to setup the local database and import the data. (The test framework imports the data for each test run, so you only need to follow these steps if you want to use the shell or admin.)
 
 ```
-python manage.py migrate  # create database structure
-python manage.py shell
+python manage.py migrate
+python manage.py loaddata hospital/fixtures/initial_data.json
 ```
 
-Once in the shell, run the function to populate the database and check it's worked.
+To access the Django admin, you also need to create a user.
 ```
-from hospital.test_data import create_test_data
-from hospital.models import Doctor, Patient, Diagnosis, Surgery
-create_test_data()
-Doctor.objects.count()  # expected output = 9
+python manage.py createsuperuser
 ```
-
-
-## How you can help
-
-Django Hospital is a way to give something back :sunflower:
-
-Fantastic people created amazing, free resources that I've benefited from since starting to learn Django a few months ago and Python a little before that. Hopefully this project will help a few people, just as I was helped.
-
-It's always useful to hear what worked and what didn't, which sections are too long or not long enough, what's kind of confusing, what you'd like to see more of. So if you've got a few minutes, let me know :sun_with_face:
-
-* Report a bug -- if you spot a mistake or something isn't working, open an issue here on Github
-* Give feedback -- general feedback and suggestions are welcome. Please send them to djangohospital@gmail.com
-* Tell a friend -- if you've found Django Hospital useful, chances are other people will too
-* *Coming soon* -- a CONTRIBUTING.md and "help wanted" labels on issues, so people can directly contribute to improving Django Hospital
-
-## Authors
-
-* **Ellen** [(ellen654321)](https://github.com/ellen654321/) -- *initial work*
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details
-
-## Built With
-
-* [Django](https://www.djangoproject.com/)
 
 ## Acknowledgments
 
-* Grey's Anatomy is owned by ABC and was created by Shonda Rhimes
-* Information from the [Grey's Anatomy Universe Wiki](http://greysanatomy.wikia.com/wiki/Grey%27s_Anatomy_Universe_Wiki) was used to create the test data, with a little guessing from me (e.g. where intern birth years weren't available)
-* PurpleBooth's [README-Template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) provided the initial outline for this README
+* Grey's Anatomy is owned by ABC and was created by Shonda Rhimes.
+* Information from the [Grey's Anatomy Universe Wiki] was used to create the fixtures, with a little guessing from me (e.g. where intern birth years weren't available).
+
+[issue]: https://github.com/ellen364/Django-Hospital/issues/new
+[Grey's Anatomy Universe Wiki]: http://greysanatomy.wikia.com/wiki/Grey%27s_Anatomy_Universe_Wiki
